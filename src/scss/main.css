@@ -1,0 +1,8 @@
+@import "~normalize.css";
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakesCondensed-Thin.ttf") format("truetype");
+}
+body {
+  font-family: "TT Lakes";
+} /*# sourceMappingURL=main.css.map */
