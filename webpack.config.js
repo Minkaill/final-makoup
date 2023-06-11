@@ -64,7 +64,7 @@ module.exports = {
   // подключение плагинов
   plugins: [
     new HTMLWebpackPlugin({
-      title: "Webpack Minkail",
+      title: "Final mockap",
       template: "/index.html",
       minify: {
         collapseWhitespace: isProd,
@@ -92,8 +92,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,
+        test: /\.(?:|jpe?g|png|gif|svg|ico)$/i,
         type: "asset/resource",
+        generator: {
+          filename: () => {
+            return isDev ? "img/[name][ext]" : "img/[name].[contenthash][ext]";
+          },
+        },
       },
       {
         test: /\.(ttf|woff|woff2|eot)$/,
