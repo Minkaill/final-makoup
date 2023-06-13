@@ -39,6 +39,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "jquery": "^3.7.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^9.4.0"
   }
 }
