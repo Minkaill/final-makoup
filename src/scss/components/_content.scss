@@ -1,0 +1,62 @@
+.container {
+  margin: auto;
+  padding: 20px 16px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.application {
+  border-left: 4px solid #41f6d7;
+  padding: 0 15px;
+}
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .services {
+    display: none;
+  }
+
+  .img {
+    width: 320px;
+    height: 176px;
+  }
+
+  .nav {
+    overflow-x: scroll;
+    display: flex;
+    gap: 20px;
+    min-height: 50px;
+    align-items: center;
+    margin: 14px 0;
+
+    &__link {
+      padding: 8px 16px;
+      min-width: fit-content;
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid transparent;
+        padding: 8px 16px;
+        background-color: white;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .content {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+
+    &__text_tb,
+    &__text_dt {
+      display: none;
+    }
+  }
+}

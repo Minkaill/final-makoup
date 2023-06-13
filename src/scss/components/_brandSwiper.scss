@@ -1,0 +1,23 @@
+.swiper {
+  padding: 16px 0;
+}
+
+.content-swiper {
+  padding: 16px;
+}
+
+.content__wrapper {
+  margin-bottom: 20px;
+}
+
+.content__title {
+  padding: 16px;
+  font-size: 20px;
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+}
+
+@media (min-width: 320px) {
+  .brands-content {
+    display: none;
+  }
+}

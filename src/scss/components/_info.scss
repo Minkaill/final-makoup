@@ -1,0 +1,16 @@
+@media (min-width: 320px) {
+  .info {
+    max-width: 320px;
+    padding: 16px;
+    width: 100%;
+
+    & > p {
+      font-size: 14px;
+      color: #7e7e82;
+    }
+
+    button {
+      gap: 10px;
+    }
+  }
+}

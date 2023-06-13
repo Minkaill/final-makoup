@@ -1,0 +1,19 @@
+.footer {
+  padding: 16px;
+  font-size: 14px;
+}
+
+@media (min-width: 320px) {
+  .footer {
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+
+    p {
+      color: #7e7e82;
+    }
+  }
+}
