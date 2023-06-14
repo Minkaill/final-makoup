@@ -7,9 +7,14 @@
   font-size: 28px;
 }
 
+.nav {
+  margin: 24px 0;
+}
+
 .application {
   border-left: 4px solid #41f6d7;
   padding: 0 15px;
+  margin: 24px 0;
 }
 
 @media (min-width: 320px) {
@@ -33,7 +38,6 @@
     gap: 20px;
     min-height: 50px;
     align-items: center;
-    margin: 14px 0;
 
     &__link {
       padding: 8px 16px;
@@ -58,5 +62,31 @@
     &__text_dt {
       display: none;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .content-info {
+    max-width: 768px;
+    display: flex;
+    justify-content: space-between;
+
+    &__info {
+      max-width: 312px;
+      width: 100%;
+    }
+  }
+
+  .img {
+    width: 360px;
+    height: 208px;
+  }
+
+  .content {
+    max-width: 768px;
+    width: 100%;
   }
 }

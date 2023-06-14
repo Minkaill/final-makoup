@@ -1,0 +1,22 @@
+@media (min-width: 320px) {
+  .technology-content {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .technology-content {
+    display: block;
+    max-width: 768px;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .technologys {
+    display: grid;
+    height: 160px;
+    gap: 15px;
+    overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

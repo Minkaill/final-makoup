@@ -1,6 +1,6 @@
 function showMoreOff() {
-  let btn = document.querySelector(".btn-read");
-  let itemsBlock = document.querySelector(".brands");
+  let btn = document.querySelector(".btn-read_th");
+  let itemsBlock = document.querySelector(".technologys");
   let btnIcon = document.querySelector(".btn-block__icon");
   btn.addEventListener("click", () => {
     itemsBlock.style.height = "160px";
@@ -10,8 +10,8 @@ function showMoreOff() {
 }
 
 function showMoreOn() {
-  let btn = document.querySelector(".btn-read");
-  let itemsBlock = document.querySelector(".brands");
+  let btn = document.querySelector(".btn-read_th");
+  let itemsBlock = document.querySelector(".technologys");
   let btnIcon = document.querySelector(".btn-block__icon");
   btn.addEventListener("click", () => {
     itemsBlock.style.height = "auto";
@@ -20,8 +20,8 @@ function showMoreOn() {
   });
 }
 function checkHeightForEnabledShow() {
-  let btn = document.querySelector(".btn-read");
-  let itemsBlock = document.querySelector(".brands");
+  let btn = document.querySelector(".btn-read_th");
+  let itemsBlock = document.querySelector(".technologys");
   var wrapperHeight = itemsBlock.offsetHeight;
   if (wrapperHeight !== 160) {
     btn.textContent = "Скрыть все";
@@ -31,8 +31,8 @@ function checkHeightForEnabledShow() {
 checkHeightForEnabledShow();
 
 function checkHeightForDisabledShow() {
-  let btn = document.querySelector(".btn-read");
-  let itemsBlock = document.querySelector(".brands");
+  let btn = document.querySelector(".btn-read_th");
+  let itemsBlock = document.querySelector(".technologys");
   var wrapperHeight = itemsBlock.offsetHeight;
   if (wrapperHeight === 160) {
     btn.textContent = "Показать все";

@@ -48,10 +48,6 @@ module.exports = {
   // правила для расширений
   resolve: {
     extensions: [".js", ".json", ".png"],
-    alias: {
-      "@models": path.resolve(__dirname, "./src/models"),
-      "@": path.resolve(__dirname, "/src"),
-    },
   },
 
   optimization: optimization(),

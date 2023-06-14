@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img src="http://localhost:4199/img/burger.svg" alt="burger" />
+        <img class="sidebar-btn" src="http://localhost:4199/img/burger.svg" alt="burger" />
         <div class="line line_mb"></div>
         <img src="http://localhost:4199/img/Group.svg" alt="group" />
       </div>
@@ -28,6 +28,42 @@
         />
       </div>
     </header>
+
+    <div class="sidebar">
+      <div class="sidebar__header">
+        <img class="sidebar-btn_close" src="http://localhost:4199/img/ex.svg" alt="burger" />
+        <img src="http://localhost:4199/img/Group.svg" alt="burger" />
+        <img src="http://localhost:4199/img/search.svg" alt="burger" />
+      </div>
+
+      <ul class="menu">
+        <li class="menu-link" href="">Ремонт техники</li>
+        <li class="menu-link" href="">Услуги и сервисы</li>
+        <li class="menu-link" href="">Корпоративным клиентам</li>
+        <li class="menu-link" href="">Продавцам техники</li>
+        <li class="menu-link" href="">Партнерам</li>
+        <li class="menu-link" href="">Производителям</li>
+        <li class="menu-link" href="">Наши сервисные центры</li>
+        <li class="menu-link" href="">Контакты</li>
+      </ul>
+
+      <div class="sidebar__footer">
+        <div class="support">
+          <div class="support__contact">
+            <img src="/images/chat copy.svg" alt="" />
+            <img src="/images/chat.svg" alt="" />
+            <img src="/images/profile.svg" alt="" />
+          </div>
+          <p class="support__email">mail@cps.com</p>
+          <h1 class="support__number">8 800 890 8900</h1>
+        </div>
+        <div class="language">
+          <p class="language-item">RU</p>
+          <p class="language-item">EN</p>
+          <p class="language-item">CH</p>
+        </div>
+      </div>
+    </div>
 
     <div class="wrapper">
       <section class="container">
@@ -54,7 +90,7 @@
           <a class="nav__link" href="#">Отзывы</a>
         </nav>
 
-        <div class="content">
+        <div class="content content-info">
           <div class="content__info">
             <p class="content__text">
               Мы являемся авторизованным сервисным центром по ремонту техники
@@ -79,9 +115,9 @@
         </div>
       </section>
 
-      <section class="content content-swiper">
+      <section class="content">
         <h2 class="content__title">Ремонт техники различных брендов</h2>
-        <div class="swiper">
+        <div class="swiper content-swiper">
           <div class="swiper-wrapper content__wrapper">
             <div class="swiper-slide">
               <img src="http://localhost:4199/img/lenovo.svg" alt="1" />
@@ -125,65 +161,41 @@
 
         <div class="content brands-content">
           <div class="brands">
-            <img class="brands__brand-item" src="/images/cat1.svg" alt="" />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 2.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 7.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 8.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 9.svg"
-              alt=""
-            />
-            <img class="brands__brand-item" src="/images/cat1.svg" alt="" />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 2.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 2.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 7.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 8.svg"
-              alt=""
-            />
+            <img src="http://localhost:4199/img/lenovo.svg" alt="1" />
+            <img src="http://localhost:4199/img/samsung.svg" alt="1" />
+            <img src="http://localhost:4199/img/iphone.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/bosch.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/hp.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/acer.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/lenovo.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/samsung.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/phone.svg" alt="" />
+
+            <img src="http://localhost:4199/img/bosch.svg" alt="" />
+
+            <img src="http://localhost:4199/img/hp.svg" alt="" />
           </div>
 
           <div class="btn-block">
-            <img src="/images/expand.svg" class="img" alt="" />
+            <img
+              class="btn-block__icon"
+              src="http://localhost:4199/img/expand.svg"
+              alt="expand"
+            />
             <button class="btn btn-read"></button>
           </div>
         </div>
       </section>
 
-      <section class="content content-swiper">
+      <section class="content">
         <h2 class="content__title">Ремонт различных видов техники</h2>
-        <div class="swiper">
+        <div class="swiper content-swiper">
           <div class="swiper-wrapper content__wrapper">
             <div class="swiper-slide">
               <img src="http://localhost:4199/img/remont-laptop.svg" alt="1" />
@@ -219,67 +231,37 @@
           <div class="swiper-scrollbar"></div>
         </div>
 
-        <div class="content brands-content">
-          <div class="brands">
-            <img class="brands__brand-item" src="/images/cat1.svg" alt="" />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 2.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 7.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 8.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 9.svg"
-              alt=""
-            />
-            <img class="brands__brand-item" src="/images/cat1.svg" alt="" />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 2.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 2.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 7.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 8.svg"
-              alt=""
-            />
+        <div class="content technology-content">
+          <div class="technologys">
+            <img src="http://localhost:4199/img/remont-laptop.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/remont-tablet.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/remont-pc.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/remont-dt.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/remont-laptop.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/remont-tablet.svg" alt="1" />
+
+            <img src="http://localhost:4199/img/remont-pc.svg" alt="1" />
           </div>
 
           <div class="btn-block">
-            <img src="/images/expand.svg" class="img" alt="" />
-            <button class="btn btn-read"></button>
+            <img
+              class="btn-block__icon"
+              src="http://localhost:4199/img/expand.svg"
+              alt="expand"
+            />
+            <button class="btn btn_th btn-read_th"></button>
           </div>
         </div>
       </section>
 
-      <section class="content content-swiper">
+      <section class="content">
         <h2 class="content__title">Цены на услуги</h2>
-        <div class="swiper">
+        <div class="swiper content-swiper">
           <div class="swiper-wrapper content__wrapper">
             <div class="swiper-slide">
               <div class="swiper-services">
@@ -407,60 +389,56 @@
           <div class="swiper-scrollbar"></div>
         </div>
 
-        <div class="content brands-content">
-          <div class="brands">
-            <img class="brands__brand-item" src="/images/cat1.svg" alt="" />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 2.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 7.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 8.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 9.svg"
-              alt=""
-            />
-            <img class="brands__brand-item" src="/images/cat1.svg" alt="" />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 2.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 2.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 7.svg"
-              alt=""
-            />
-            <img
-              class="brands__brand-item"
-              src="/images/cat1 copy 8.svg"
-              alt=""
-            />
+        <div class="content services-content">
+          <div class="services-content__header">
+            <h4>Ремонтные услуги</h4>
+            <h4>Цены</h4>
+            <h4>Срок</h4>
           </div>
 
-          <div class="btn-block">
-            <img src="/images/expand.svg" class="img" alt="" />
-            <button class="btn btn-read"></button>
+          <div class="services-content__block">
+            <div class="services-content__item">
+              <p>Диагностика</p>
+              <p>Бесплатно</p>
+              <p>30 мин</p>
+              <button class="btn-order">ЗАКАЗАТЬ</button>
+            </div>
+
+            <div class="line_blocks"></div>
+
+            <div class="services-content__item">
+              <p>Замена дисплея</p>
+              <p>1 000 ₽</p>
+              <p>30-120 мин</p>
+              <button class="btn-order">ЗАКАЗАТЬ</button>
+            </div>
+
+            <div class="line_blocks"></div>
+
+            <div class="services-content__item">
+              <p>Замена полифонического динамика</p>
+              <p>1 000 ₽</p>
+              <p>30-120 мин</p>
+              <button class="btn-order">ЗАКАЗАТЬ</button>
+            </div>
+
+            <div class="line_blocks"></div>
+
+            <div class="services-content__item">
+              <p>Тестирование с выдачей технического заключения</p>
+              <p>1 000 ₽</p>
+              <p>30-120 мин</p>
+              <button class="btn-order">ЗАКАЗАТЬ</button>
+            </div>
+
+            <div class="line_blocks"></div>
+
+            <div class="services-content__item">
+              <p>Замена программного обеспечения</p>
+              <p>1 000 ₽</p>
+              <p>30-120 мин</p>
+              <button class="btn-order">ЗАКАЗАТЬ</button>
+            </div>
           </div>
         </div>
       </section>

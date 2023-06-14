@@ -14,3 +14,20 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .info {
+    max-width: 768px;
+    width: 100%;
+
+    & > p:first-child {
+      width: 421px;
+    }
+
+    button {
+      & > p:first-child {
+        width: fit-content;
+      }
+    }
+  }
+}

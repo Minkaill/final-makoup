@@ -10,8 +10,18 @@
   margin-bottom: 20px;
 }
 
+.btn-block {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    transition-duration: 0.3s;
+  }
+}
+
 .content__title {
   padding: 16px;
+  margin: 20px 0;
   font-size: 20px;
   background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
 }
@@ -19,5 +29,25 @@
 @media (min-width: 320px) {
   .brands-content {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-swiper {
+    display: none;
+  }
+  .brands-content {
+    display: block;
+    max-width: 768px;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .brands {
+    display: grid;
+    height: 160px;
+    gap: 15px;
+    overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

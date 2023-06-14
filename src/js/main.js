@@ -1,6 +1,8 @@
 import "../scss/main.scss";
 import "./brandSwiper";
 import "./showMore";
+import "./showMoreTechnology";
+import "./sidemenu";
 
 // картинки
 import burger from "../img/burger.svg";
@@ -13,6 +15,8 @@ import profile from "../img/profile.svg";
 import repair from "../img/repair.svg";
 import expand from "../img/expand.svg";
 import line from "../img/Line.svg";
+import ex from "../img/ex.svg";
+import search from "../img/search.svg";
 
 // бренды
 import iphone from "../img/brands/iphone.svg";

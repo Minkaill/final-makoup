@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.img {
+  border-radius: 6px;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -78,5 +82,11 @@ textarea:focus {
   .line_blocks {
     max-width: 320px;
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .line_blocks {
+    max-width: 768px;
   }
 }
