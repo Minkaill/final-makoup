@@ -79,3 +79,17 @@
   color: #7e7e82;
   transition: 0.3s;
 }
+
+@media (min-width: 1440px) {
+  .sidebar {
+    left: 0;
+    position: sticky;
+    z-index: 0;
+    box-shadow: 0px 0px 0px rgba(69, 79, 126, 0.02),
+      0px 0px 0px rgba(14, 24, 80, 0.2);
+  }
+
+  .sidebar-btn_close {
+    display: none;
+  }
+}

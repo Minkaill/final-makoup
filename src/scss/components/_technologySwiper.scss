@@ -20,3 +20,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (min-width: 1440px) {
+  .technology-content {
+    max-width: 1120px;
+  }
+
+  .technologys {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

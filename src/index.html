@@ -9,14 +9,22 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img class="sidebar-btn" src="http://localhost:4199/img/burger.svg" alt="burger" />
+        <img
+          class="sidebar-btn"
+          src="http://localhost:4199/img/burger.svg"
+          alt="burger"
+        />
         <div class="line line_mb"></div>
         <img src="http://localhost:4199/img/Group.svg" alt="group" />
       </div>
       <div class="line line_tb"></div>
       <div class="header__logo-block">
         <div class="header__icons_tb">
-          <img src="http://localhost:4199/img/call.svg" alt="" />
+          <img
+            class="modalCall_active"
+            src="http://localhost:4199/img/call.svg"
+            alt=""
+          />
           <img src="http://localhost:4199/img/chat.svg" alt="" />
           <img src="http://localhost:4199/img/profile.svg" alt="" />
         </div>
@@ -31,7 +39,11 @@
 
     <div class="sidebar">
       <div class="sidebar__header">
-        <img class="sidebar-btn_close" src="http://localhost:4199/img/ex.svg" alt="burger" />
+        <img
+          class="sidebar-btn_close"
+          src="http://localhost:4199/img/ex.svg"
+          alt="burger"
+        />
         <img src="http://localhost:4199/img/Group.svg" alt="burger" />
         <img src="http://localhost:4199/img/search.svg" alt="burger" />
       </div>
@@ -50,9 +62,17 @@
       <div class="sidebar__footer">
         <div class="support">
           <div class="support__contact">
-            <img src="/images/chat copy.svg" alt="" />
-            <img src="/images/chat.svg" alt="" />
-            <img src="/images/profile.svg" alt="" />
+            <img
+              class="modalCall_active"
+              src="http://localhost:4199/img/call.svg"
+              alt=""
+            />
+            <img
+              class="modalFeedback_active"
+              src="http://localhost:4199/img/chat.svg"
+              alt=""
+            />
+            <img src="http://localhost:4199/img/profile.svg" alt="" />
           </div>
           <p class="support__email">mail@cps.com</p>
           <h1 class="support__number">8 800 890 8900</h1>
@@ -65,6 +85,25 @@
       </div>
     </div>
 
+    <div class="modal-container">
+      <img class="modal_close" src="http://localhost:4199/img/ex.svg" alt="" />
+
+      <div class="modal-container__info">
+        <h1>Обратная связь</h1>
+        <form class="modal-container__form" action="">
+          <input type="text" />
+          <input type="number" />
+          <input type="email" />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+        <p>
+          Нажимая “отправить”, вы даете согласие на обработку персональных
+          данных и соглашаетесь с нашей политикой конфиденциальности
+        </p>
+        <button class="btn-order">ОТПРАВИТЬ</button>
+      </div>
+    </div>
+
     <div class="wrapper">
       <section class="container">
         <div class="application">
@@ -72,14 +111,13 @@
           <div class="services">
             <div class="services__item">
               <p>Оставить заявку</p>
-              <img src="/images/repair_2.svg" alt="" />
+              <img src="http://localhost:4199/img/repair_2.svg" alt="" />
             </div>
             <div class="services__item">
               <p>Статус ремонта</p>
-              <img src="/images/checkstatus_2.svg" alt="" />
+              <img src="http://localhost:4199/img/checkstatus_2.svg" alt="" />
             </div>
           </div>
-          <div></div>
         </div>
         <nav class="nav">
           <a class="nav__link" href="#">Ремонтируемые устройства</a>
@@ -92,23 +130,24 @@
 
         <div class="content content-info">
           <div class="content__info">
-            <p class="content__text">
-              Мы являемся авторизованным сервисным центром по ремонту техники
-              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-              официальной гарантией производителя.
-            </p>
-            <span class="content__text content__text_tb">
-              Мы успешно работаем с 1992 года и заслужили репутацию надежного
-              партнера
-            </span>
-            <span class="content__text content__text_dt">
-              что подтверждает большое количество постоянных клиентов. Мы
-              гордимся тем, что к нам обращаются по рекомендациям и, в свою
-              очередь, советуют нас родным и близким.
-            </span>
+            <div class="content__info-text">
+              <p class="content__text">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <span class="content__text content__text_tb">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              </span>
+              <span class="content__text content__text_dt">
+                что подтверждает большое количество постоянных клиентов. Мы
+                гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.
+              </span>
+            </div>
             <button class="btn">
               <img src="http://localhost:4199/img/expand.svg" alt="expand" />
-              Читать далее
+              <p class="btn-readmore">Читать далее</p>
             </button>
           </div>
           <img class="img" src="http://localhost:4199/img/cps.png" alt="" />
@@ -175,7 +214,7 @@
 
             <img src="http://localhost:4199/img/samsung.svg" alt="1" />
 
-            <img src="http://localhost:4199/img/phone.svg" alt="" />
+            <img src="http://localhost:4199/img/iphone.svg" alt="" />
 
             <img src="http://localhost:4199/img/bosch.svg" alt="" />
 

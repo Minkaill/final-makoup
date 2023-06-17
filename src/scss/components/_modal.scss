@@ -1,0 +1,72 @@
+.modal-container {
+  position: absolute;
+  right: -320px;
+  top: 0;
+  padding: 24px 16px;
+  height: 100vh;
+  transition-duration: 0.2s;
+  background-color: $white;
+  z-index: 100;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__info p {
+    margin: 16px 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .modal-container {
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 24px;
+      margin: 40px 0 24px;
+    }
+
+    &__info {
+      max-width: 320px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    &__form {
+      max-width: 320px;
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+
+      input {
+        max-width: 288px;
+        border: 1px solid #eaeaea;
+        width: 100%;
+        border-radius: 8px;
+        padding: 16px;
+        height: 48px;
+      }
+
+      textarea {
+        max-width: 288px;
+        border: 1px solid #eaeaea;
+        width: 100%;
+        padding: 16px;
+        height: 118px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-container {
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+}

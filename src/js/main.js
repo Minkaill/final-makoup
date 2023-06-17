@@ -3,6 +3,8 @@ import "./brandSwiper";
 import "./showMore";
 import "./showMoreTechnology";
 import "./sidemenu";
+import "./readMore";
+import "./ModalShow"
 
 // картинки
 import burger from "../img/burger.svg";
@@ -13,6 +15,8 @@ import cps from "../img/cps.png";
 import group from "../img/Group.svg";
 import profile from "../img/profile.svg";
 import repair from "../img/repair.svg";
+import repair_2 from "../img/repair_2.svg";
+import checkstatus_2 from "../img/checkstatus_2.svg";
 import expand from "../img/expand.svg";
 import line from "../img/Line.svg";
 import ex from "../img/ex.svg";

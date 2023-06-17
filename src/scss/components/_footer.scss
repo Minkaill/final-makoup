@@ -29,3 +29,13 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .footer {
+    max-width: 1120px;
+
+    p {
+      max-width: 280px;
+    }
+  }
+}

@@ -7,11 +7,23 @@
   font-size: 28px;
 }
 
+.content__text_tb {
+  margin-top: 20px;
+  display: block;
+}
+
+.content__info-text {
+  height: 94px;
+  overflow: hidden;
+}
+
 .nav {
   margin: 24px 0;
 }
 
 .application {
+  display: flex;
+  justify-content: space-between;
   border-left: 4px solid #41f6d7;
   padding: 0 15px;
   margin: 24px 0;
@@ -57,11 +69,6 @@
     display: block;
     max-width: 320px;
     width: 100%;
-
-    &__text_tb,
-    &__text_dt {
-      display: none;
-    }
   }
 }
 
@@ -73,11 +80,6 @@
     max-width: 768px;
     display: flex;
     justify-content: space-between;
-
-    &__info {
-      max-width: 312px;
-      width: 100%;
-    }
   }
 
   .img {
@@ -88,5 +90,50 @@
   .content {
     max-width: 768px;
     width: 100%;
+
+    &__info {
+      max-width: 312px;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1120px;
+  }
+  .img {
+    width: 531px;
+    height: 307px;
+  }
+
+  .content-info {
+    max-width: 1120px;
+  }
+
+  .content {
+    max-width: 1120px;
+
+    &__info {
+      max-width: 490px;
+    }
+  }
+
+  .application {
+    max-width: 1120px;
+    width: 100%;
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &__item {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      gap: 8px;
+    }
   }
 }
