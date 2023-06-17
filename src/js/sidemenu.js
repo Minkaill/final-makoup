@@ -37,12 +37,15 @@ function autoClose() {
 autoClose();
 
 function callClose() {
-  let wrapper = document.querySelector(".modalCall_active");
+  let wrapper = document.querySelector(".wrapper");
   let sidebar = document.querySelector(".sidebar");
+  let call = document.querySelectorAll(".modalCall_active");
 
-  wrapper.addEventListener("click", () => {
-    sidebar.style.left = "-320px";
-    wrapper.style.opacity = "100";
+  call.forEach((item) => {
+    item.addEventListener("click", () => {
+      sidebar.style.left = "-320px";
+      wrapper.style.opacity = "100";
+    });
   });
 }
 

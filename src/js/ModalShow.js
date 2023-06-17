@@ -5,7 +5,7 @@ function showModal() {
 
   btn.forEach((item) => {
     item.addEventListener("click", () => {
-      modal.style.right = "0px";
+      modal.style.display = "block";
       wrapper.style.opacity = "20%";
     });
   });
@@ -20,7 +20,7 @@ function modalClose() {
 
   btn.forEach((item) => {
     item.addEventListener("click", () => {
-      modal.style.right = "-320px";
+      modal.style.display = "none";
       wrapper.style.opacity = "100";
     });
   });
@@ -33,7 +33,8 @@ function autoClose() {
   let modal = document.querySelector(".modal-container");
 
   wrapper.addEventListener("click", () => {
-    modal.style.right = "-320px";
+    modal.style.display = "none";
+    modal.style.opacity = "0";
     wrapper.style.opacity = "100";
   });
 }
