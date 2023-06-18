@@ -1,10 +1,12 @@
 function showMoreOff() {
   let btn = document.querySelector(".btn-read");
   let itemsBlock = document.querySelector(".brands");
-  let btnIcon = document.querySelector(".btn-block__icon");
+  let btnIcon = document.querySelectorAll(".btn-block__icon");
   btn.addEventListener("click", () => {
     itemsBlock.style.height = "160px";
-    btnIcon.style.transform = "rotate(0deg)";
+    btnIcon.forEach((item) => {
+      item.style.transform = "rotate(0deg)";
+    });
     checkHeightForDisabledShow();
   });
 }

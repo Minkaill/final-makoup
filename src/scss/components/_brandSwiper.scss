@@ -3,7 +3,7 @@
 }
 
 .content-swiper {
-  padding: 16px;
+  padding: 16px !important;
 }
 
 .content__wrapper {
@@ -34,7 +34,7 @@
 
 @media (min-width: 768px) {
   .content-swiper {
-    display: none;
+    display: none !important;
   }
   .brands-content {
     display: block;

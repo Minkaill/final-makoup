@@ -9,43 +9,28 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img
-          class="sidebar-btn"
-          src="http://localhost:4199/img/burger.svg"
-          alt="burger"
-        />
+        <img class="sidebar-btn" src="/src/img/burger.svg" alt="burger" />
         <div class="line line_mb"></div>
-        <img src="http://localhost:4199/img/Group.svg" alt="group" />
+        <img src="/src/img/Group.svg" alt="group" />
       </div>
       <div class="line line_tb"></div>
       <div class="header__logo-block">
         <div class="header__icons_tb">
-          <img
-            class="modalCall_active"
-            src="http://localhost:4199/img/call.svg"
-            alt=""
-          />
-          <img src="http://localhost:4199/img/chat.svg" alt="" />
-          <img src="http://localhost:4199/img/profile.svg" alt="" />
+          <img class="modalCall_active" src="/src/img/call.svg" alt="" />
+          <img class="modalFeedback_active" src="/src/img/chat.svg" alt="" />
+          <img src="/src/img/profile.svg" alt="" />
         </div>
         <div class="line line_dt"></div>
-        <img src="http://localhost:4199/img/repair.svg" alt="repair" />
-        <img
-          src="http://localhost:4199/img/checkstatus.svg"
-          alt="checkstatus"
-        />
+        <img src="/src/img/repair.svg" alt="repair" />
+        <img src="/src/img/checkstatus.svg" alt="checkstatus" />
       </div>
     </header>
 
     <div class="sidebar">
       <div class="sidebar__header">
-        <img
-          class="sidebar-btn_close"
-          src="http://localhost:4199/img/ex.svg"
-          alt="burger"
-        />
-        <img src="http://localhost:4199/img/Group.svg" alt="burger" />
-        <img src="http://localhost:4199/img/search.svg" alt="burger" />
+        <img class="sidebar-btn_close" src="/src/img/ex.svg" alt="burger" />
+        <img src="/src/img/Group.svg" alt="burger" />
+        <img src="/src/img/search.svg" alt="burger" />
       </div>
 
       <ul class="menu">
@@ -62,17 +47,9 @@
       <div class="sidebar__footer">
         <div class="support">
           <div class="support__contact">
-            <img
-              class="modalCall_active"
-              src="http://localhost:4199/img/call.svg"
-              alt=""
-            />
-            <img
-              class="modalFeedback_active"
-              src="http://localhost:4199/img/chat.svg"
-              alt=""
-            />
-            <img src="http://localhost:4199/img/profile.svg" alt="" />
+            <img class="modalCall_active" src="/src/img/call.svg" alt="" />
+            <img class="modalFeedback_active" src="/src/img/chat.svg" alt="" />
+            <img src="/src/img/profile.svg" alt="" />
           </div>
           <p class="support__email">mail@cps.com</p>
           <h1 class="support__number">8 800 890 8900</h1>
@@ -86,15 +63,37 @@
     </div>
 
     <div class="modal-container">
-      <img class="modal_close" src="http://localhost:4199/img/ex.svg" alt="" />
+      <img class="modal_close" src="/src/img/ex.svg" alt="" />
 
       <div class="modal-container__info">
         <h1>Обратная связь</h1>
         <form class="modal-container__form" action="">
-          <input type="text" />
-          <input type="number" />
-          <input type="email" />
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <input placeholder="Имя" type="text" />
+          <input placeholder="Телефон" type="number" />
+          <input placeholder="Электронная почта" type="email" />
+          <textarea
+            placeholder="Сообщение"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+        </form>
+        <p>
+          Нажимая “отправить”, вы даете согласие на обработку персональных
+          данных и соглашаетесь с нашей политикой конфиденциальности
+        </p>
+        <button class="btn-order">ОТПРАВИТЬ</button>
+      </div>
+    </div>
+
+    <div class="modal-container_call">
+      <img class="modal_close_call" src="/src/img/ex.svg" alt="" />
+
+      <div class="modal-container__info">
+        <h1>Заказать звонок</h1>
+        <form class="modal-container__form" action="">
+          <input placeholder="Телефон" type="number" />
         </form>
         <p>
           Нажимая “отправить”, вы даете согласие на обработку персональных
@@ -111,11 +110,11 @@
           <div class="services">
             <div class="services__item">
               <p>Оставить заявку</p>
-              <img src="http://localhost:4199/img/repair_2.svg" alt="" />
+              <img src="/src/img/repair_2.svg" alt="" />
             </div>
             <div class="services__item">
               <p>Статус ремонта</p>
-              <img src="http://localhost:4199/img/checkstatus_2.svg" alt="" />
+              <img src="/src/img/checkstatus_2.svg" alt="" />
             </div>
           </div>
         </div>
@@ -146,11 +145,15 @@
               </span>
             </div>
             <button class="btn">
-              <img src="http://localhost:4199/img/expand.svg" alt="expand" />
+              <img
+                class="btn-block__icon"
+                src="/src/img/expand.svg"
+                alt="expand"
+              />
               <p class="btn-readmore">Читать далее</p>
             </button>
           </div>
-          <img class="img" src="http://localhost:4199/img/cps.png" alt="" />
+          <img class="img" src="/src/img/cps.png" alt="" />
         </div>
       </section>
 
@@ -159,37 +162,37 @@
         <div class="swiper content-swiper">
           <div class="swiper-wrapper content__wrapper">
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/lenovo.svg" alt="1" />
+              <img src="/src/img/brands/lenovo.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/samsung.svg" alt="1" />
+              <img src="/src/img/brands/samsung.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/iphone.svg" alt="1" />
+              <img src="/src/img/brands/iphone.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/bosch.svg" alt="1" />
+              <img src="/src/img/brands/bosch.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/hp.svg" alt="1" />
+              <img src="/src/img/brands/hp.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/acer.svg" alt="1" />
+              <img src="/src/img/brands/acer.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/lenovo.svg" alt="1" />
+              <img src="/src/img/brands/lenovo.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/samsung.svg" alt="1" />
+              <img src="/src/img/brands/samsung.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/phone.svg" alt="" />
+              <img src="/src/img/brands/iphone.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/bosch.svg" alt="" />
+              <img src="/src/img/brands/bosch.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/hp.svg" alt="" />
+              <img src="/src/img/brands/hp.svg" alt="1" />
             </div>
           </div>
 
@@ -200,31 +203,23 @@
 
         <div class="content brands-content">
           <div class="brands">
-            <img src="http://localhost:4199/img/lenovo.svg" alt="1" />
-            <img src="http://localhost:4199/img/samsung.svg" alt="1" />
-            <img src="http://localhost:4199/img/iphone.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/bosch.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/hp.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/acer.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/lenovo.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/samsung.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/iphone.svg" alt="" />
-
-            <img src="http://localhost:4199/img/bosch.svg" alt="" />
-
-            <img src="http://localhost:4199/img/hp.svg" alt="" />
+            <img src="/src/img/brands/lenovo.svg" alt="1" />
+            <img src="/src/img/brands/samsung.svg" alt="1" />
+            <img src="/src/img/brands/iphone.svg" alt="1" />
+            <img src="/src/img/brands/bosch.svg" alt="1" />
+            <img src="/src/img/brands/hp.svg" alt="1" />
+            <img src="/src/img/brands/acer.svg" alt="1" />
+            <img src="/src/img/brands/lenovo.svg" alt="1" />
+            <img src="/src/img/brands/samsung.svg" alt="1" />
+            <img src="/src/img/brands/iphone.svg" alt="1" />
+            <img src="/src/img/brands/bosch.svg" alt="1" />
+            <img src="/src/img/brands/hp.svg" alt="1" />
           </div>
 
           <div class="btn-block">
             <img
               class="btn-block__icon"
-              src="http://localhost:4199/img/expand.svg"
+              src="/src/img/expand.svg"
               alt="expand"
             />
             <button class="btn btn-read"></button>
@@ -237,31 +232,31 @@
         <div class="swiper content-swiper">
           <div class="swiper-wrapper content__wrapper">
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/remont-laptop.svg" alt="1" />
+              <img src="/src/img/tehnology/remont-laptop.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/remont-tablet.svg" alt="1" />
+              <img src="/src/img/tehnology/remont-tablet.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/remont-pc.svg" alt="1" />
+              <img src="/src/img/tehnology/remont-pc.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/remont-dt.svg" alt="1" />
+              <img src="/src/img/tehnology/remont-dt.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/remont-laptop.svg" alt="1" />
+              <img src="/src/img/tehnology/remont-laptop.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/remont-tablet.svg" alt="1" />
+              <img src="/src/img/tehnology/remont-tablet.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/remont-pc.svg" alt="1" />
+              <img src="/src/img/tehnology/remont-pc.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/remont-dt.svg" alt="1" />
+              <img src="/src/img/tehnology/remont-dt.svg" alt="1" />
             </div>
             <div class="swiper-slide">
-              <img src="http://localhost:4199/img/remont-laptop.svg" alt="1" />
+              <img src="/src/img/tehnology/remont-laptop.svg" alt="1" />
             </div>
           </div>
 
@@ -272,25 +267,19 @@
 
         <div class="content technology-content">
           <div class="technologys">
-            <img src="http://localhost:4199/img/remont-laptop.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/remont-tablet.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/remont-pc.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/remont-dt.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/remont-laptop.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/remont-tablet.svg" alt="1" />
-
-            <img src="http://localhost:4199/img/remont-pc.svg" alt="1" />
+            <img src="/src/img/tehnology/remont-laptop.svg" alt="1" />
+            <img src="/src/img/tehnology/remont-tablet.svg" alt="1" />
+            <img src="/src/img/tehnology/remont-pc.svg" alt="1" />
+            <img src="/src/img/tehnology/remont-dt.svg" alt="1" />
+            <img src="/src/img/tehnology/remont-laptop.svg" alt="1" />
+            <img src="/src/img/tehnology/remont-tablet.svg" alt="1" />
+            <img src="/src/img/tehnology/remont-pc.svg" alt="1" />
           </div>
 
           <div class="btn-block">
             <img
               class="btn-block__icon"
-              src="http://localhost:4199/img/expand.svg"
+              src="/src/img/expand.svg"
               alt="expand"
             />
             <button class="btn btn_th btn-read_th"></button>
@@ -490,7 +479,7 @@
         </p>
         <button class="btn">
           <p>Получить коммерческое предложение</p>
-          <img src="http://localhost:4199/img/Line.svg" alt="" />
+          <img src="/src/img/Line.svg" alt="" />
         </button>
       </div>
 
